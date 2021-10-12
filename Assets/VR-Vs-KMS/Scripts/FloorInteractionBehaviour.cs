@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FloorInteractionBehaviour : MonoBehaviour
 {
+    public RadioButtonSystem radioButtons;
+    public JsonManager jsonManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,5 +20,7 @@ public class FloorInteractionBehaviour : MonoBehaviour
 
     private void OnMouseDown()
     {
+        jsonManager.addPinPoint(radioButtons.OnClick(), gameObject.transform);
+        Debug.Log(gameObject.transform.position);
     }
 }
