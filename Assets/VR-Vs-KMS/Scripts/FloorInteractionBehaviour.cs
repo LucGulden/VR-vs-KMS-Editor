@@ -20,7 +20,6 @@ public class FloorInteractionBehaviour : MonoBehaviour
 
     private void OnMouseDown()
     {
-        jsonManager.addPinPoint(radioButtons.OnClick(), gameObject.transform);
-        Debug.Log(gameObject.transform.position);
+        jsonManager.updatePinPoint(radioButtons.OnClick(), gameObject.transform);
     }
 }

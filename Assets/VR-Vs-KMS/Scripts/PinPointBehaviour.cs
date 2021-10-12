@@ -5,13 +5,18 @@ using UnityEngine.UI;
 
 public class PinPointBehaviour : MonoBehaviour
 {
-
     private Transform CameraTransform;
+    private JsonManager jsonManager;
+    private RadioButtonSystem radioButtons;
+    public string PinType;
+
 
     // Use this for initialization
     void Start()
     {
         CameraTransform = GameObject.Find("ARCamera").transform;
+        jsonManager = GameObject.Find("JsonManager").GetComponent<JsonManager>();
+        radioButtons = GameObject.Find("PinPoints").GetComponent<RadioButtonSystem>();
     }
 
     // Update is called once per frame
@@ -27,6 +32,6 @@ public class PinPointBehaviour : MonoBehaviour
         //TODO update position of the label and label value
 
         gameObject.transform.parent = labelPositionTransform;
-        gameObject.transform.localPosition = new Vector3(0, 0, 0.5f);
+        gameObject.transform.localPosition = new Vector3(-1.5f, -1.5f, 0);
     }
 }
