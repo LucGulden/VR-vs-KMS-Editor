@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class JsonManager : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class JsonManager : MonoBehaviour
     private List<Transform> FloorUsed;
     public List<GameObject> PinPoints;
     public GameObject Level;
+    public GameObject exportBtn;
+    public GameObject importBtn;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +21,10 @@ public class JsonManager : MonoBehaviour
         ThrowableObjects = new List<Vector3>();
         SpawnPoints = new List<Vector3>();
         FloorUsed = new List<Transform>();
+
+        exportBtn.GetComponent<Button>().onClick.AddListener(saveFile);
+        importBtn.GetComponent<Button>().onClick.AddListener(loadFile);
+
     }
 
     // Update is called once per frame
@@ -88,6 +95,15 @@ public class JsonManager : MonoBehaviour
         {
             addPinPoint(radioOption, clickedElement);
         }
+    }
 
+    public void saveFile()
+    {
+        Debug.Log("Dylaaaaaaaaaaaan");
+    }
+
+    public void loadFile()
+    {
+        Debug.Log("Clemeeeeeeeeeeeent");
     }
 }
