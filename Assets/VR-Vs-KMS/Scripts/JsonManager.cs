@@ -47,24 +47,16 @@ public class JsonManager : MonoBehaviour
     public void loadFile()
     {
         string path = EditorUtility.OpenFilePanel("Load config", "", "json");
-        Debug.Log(path);
         if (path.Length != 0)
         {
+            pm.rmAllPinPoint();
             StreamReader r = new StreamReader(path);
             string jsonString = r.ReadToEnd();
             JsonData tmpData = JsonUtility.FromJson<JsonData>(jsonString);
 
-            Children = level.GetComponentsInChildren<Transform>();
-            foreach (Transform child in Children)
-            {
-                if (child.GetComponent<PinPointBehaviour>() != null)
-                {
-                    Destroy(child.gameObject);
-                }
-            }
-
             int id = 0;
-            foreach(int floor in tmpData.FloorUsedId)
+            Children = level.GetComponentsInChildren<Transform>();
+            foreach (int floor in tmpData.FloorUsedId)
             {
                 if(floor == 0)
                 {
@@ -74,7 +66,7 @@ public class JsonManager : MonoBehaviour
                         {
                             if (child.GetComponent<FloorInteractionBehaviour>().id == id)
                             {
-                                Debug.Log("top");
+                                JsonData.GetInstance().FloorUsedId[id] = -1;
                                 pm.addPinPoint("ContaminationArea", child, id);
                             }
                         }
@@ -89,7 +81,7 @@ public class JsonManager : MonoBehaviour
                         {
                             if (child.GetComponent<FloorInteractionBehaviour>().id == id)
                             {
-                                Debug.Log("top");
+                                JsonData.GetInstance().FloorUsedId[id] = -1;
                                 pm.addPinPoint("ThrowableObject", child, id);
                             }
                         }
@@ -104,8 +96,22 @@ public class JsonManager : MonoBehaviour
                         {
                             if (child.GetComponent<FloorInteractionBehaviour>().id == id)
                             {
-                                Debug.Log("top");
+                                JsonData.GetInstance().FloorUsedId[id] = -1;
                                 pm.addPinPoint("SpawnPoint", child, id);
+                            }
+                        }
+                    }
+                }
+                else if (floor == -1)
+                {
+                    Children = level.GetComponentsInChildren<Transform>();
+                    foreach (Transform child in Children)
+                    {
+                        if (child.GetComponent<FloorInteractionBehaviour>() != null)
+                        {
+                            if (child.GetComponent<FloorInteractionBehaviour>().id == id)
+                            {
+                                JsonData.GetInstance().FloorUsedId[id] = -1;
                             }
                         }
                     }

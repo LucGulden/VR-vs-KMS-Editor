@@ -41,10 +41,6 @@ public class PinPointsManager : MonoBehaviour
 
     public void addPinPoint(string radioOption, Transform clickedElement, int id)
     {
-        Debug.Log(radioOption);
-        Debug.Log(clickedElement.name);
-        Debug.Log(id);
-        Debug.Log("--------------------------------------");
         if (data.FloorUsedId[id] == -1)
         {
             GameObject newPin;
@@ -63,6 +59,18 @@ public class PinPointsManager : MonoBehaviour
         {
             data.FloorUsedId[id] = -1;
             Destroy(clickedElement.GetComponentInChildren<PinPointBehaviour>().gameObject);
+        }
+    }
+
+    public void rmAllPinPoint()
+    {
+        Children = level.GetComponentsInChildren<Transform>();
+        foreach (Transform child in Children)
+        {
+            if (child.GetComponent<PinPointBehaviour>() != null)
+            {
+                Destroy(child.gameObject);
+            }
         }
     }
 
