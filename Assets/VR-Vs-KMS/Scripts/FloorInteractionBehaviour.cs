@@ -17,22 +17,10 @@ public class FloorInteractionBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
     }
 
     private void OnMouseDown()
     {
-        Debug.Log("Mon ID est: " + id);
         pm.updatePinPoint(radioButtons.OnClick(), gameObject.transform, id);
-    }
-
-    public void setID(int index)
-    {
-        id = index;
-    }
-
-    public int getID()
-    {
-        return id;
     }
 }

@@ -9,7 +9,11 @@ public class JsonManager : MonoBehaviour
 {
     public GameObject exportBtn;
     public GameObject importBtn;
-    
+    public PinPointsManager pm;
+    public GameObject level;
+    private Transform[] Children;
+
+
     [SerializeField] 
     private JsonData data = JsonData.GetInstance();
 
@@ -38,22 +42,84 @@ public class JsonManager : MonoBehaviour
             if (json != null)
                 File.WriteAllText(path, json);
         }
-        Debug.Log("Dylaaaaaaaaaaaan");
     }
 
     public void loadFile()
     {
-        Debug.Log("Clemeeeeeeeeeeeent");
+        string path = EditorUtility.OpenFilePanel("Load config", "", "json");
+        Debug.Log(path);
+        if (path.Length != 0)
+        {
+            StreamReader r = new StreamReader(path);
+            string jsonString = r.ReadToEnd();
+            JsonData tmpData = JsonUtility.FromJson<JsonData>(jsonString);
+
+            Children = level.GetComponentsInChildren<Transform>();
+            foreach (Transform child in Children)
+            {
+                if (child.GetComponent<PinPointBehaviour>() != null)
+                {
+                    Destroy(child.gameObject);
+                }
+            }
+
+            int id = 0;
+            foreach(int floor in tmpData.FloorUsedId)
+            {
+                if(floor == 0)
+                {
+                    foreach (Transform child in Children)
+                    {
+                        if (child.GetComponent<FloorInteractionBehaviour>() != null)
+                        {
+                            if (child.GetComponent<FloorInteractionBehaviour>().id == id)
+                            {
+                                Debug.Log("top");
+                                pm.addPinPoint("ContaminationArea", child, id);
+                            }
+                        }
+                    }
+                }
+                else if(floor == 1)
+                {
+                    Children = level.GetComponentsInChildren<Transform>();
+                    foreach (Transform child in Children)
+                    {
+                        if (child.GetComponent<FloorInteractionBehaviour>() != null)
+                        {
+                            if (child.GetComponent<FloorInteractionBehaviour>().id == id)
+                            {
+                                Debug.Log("top");
+                                pm.addPinPoint("ThrowableObject", child, id);
+                            }
+                        }
+                    }
+                }
+                else if(floor == 2)
+                {
+                    Children = level.GetComponentsInChildren<Transform>();
+                    foreach (Transform child in Children)
+                    {
+                        if (child.GetComponent<FloorInteractionBehaviour>() != null)
+                        {
+                            if (child.GetComponent<FloorInteractionBehaviour>().id == id)
+                            {
+                                Debug.Log("top");
+                                pm.addPinPoint("SpawnPoint", child, id);
+                            }
+                        }
+                    }
+                }
+                id++;
+            }
+        }
     }
 }
 
 [System.Serializable]
 public class JsonData
 {
-    public List<Vector3> ContaminationAreas = new List<Vector3>();
-    public List<Vector3> ThrowableObjects = new List<Vector3>();
-    public List<Vector3> SpawnPoints = new List<Vector3>();
-    public List<int> FloorUsedId = new List<int>();
+    public List<int> FloorUsedId = new List<int>(); 
 
     private JsonData() { }
 

@@ -9,7 +9,8 @@ public class PinPointsManager : MonoBehaviour
     public GameObject jsonManager;
     private JsonManager jm;
     public List<GameObject> PinPoints;
-    JsonData data;
+    private JsonData data;
+    private Transform[] Children;
 
     // Start is called before the first frame update
     void Start()
@@ -18,8 +19,9 @@ public class PinPointsManager : MonoBehaviour
         data = JsonData.GetInstance();
         jm = jsonManager.GetComponent<JsonManager>();
 
+        Children = level.GetComponentsInChildren<Transform>();
         int id = 0;
-        foreach (Transform child in level.GetComponent<Transform>())
+        foreach (Transform child in Children)
         {
             if (child.GetComponent<FloorInteractionBehaviour>() != null)
             {
@@ -27,16 +29,6 @@ public class PinPointsManager : MonoBehaviour
                 data.FloorUsedId.Add(-1);
                 child.GetComponent<FloorInteractionBehaviour>().id = id;
                 id++;
-            }
-            foreach (Transform ch in child)
-            {
-                if (child.GetComponent<FloorInteractionBehaviour>() != null)
-                {
-                    Floors.Add(ch);
-                    data.FloorUsedId.Add(-1);
-                    ch.GetComponent<FloorInteractionBehaviour>().id = id;
-                    id++;
-                }
             }
         }
     }
@@ -46,29 +38,18 @@ public class PinPointsManager : MonoBehaviour
     {
         
     }
+
     public void addPinPoint(string radioOption, Transform clickedElement, int id)
     {
+        Debug.Log(radioOption);
+        Debug.Log(clickedElement.name);
         Debug.Log(id);
+        Debug.Log("--------------------------------------");
         if (data.FloorUsedId[id] == -1)
         {
             GameObject newPin;
-            int index = 0;
-            if (radioOption == "ContaminationArea")
-            {
-                data.ContaminationAreas.Add(clickedElement.localPosition);
-                index = 0;
-            }
-            else if (radioOption == "ThrowableObject")
-            {
-                data.ThrowableObjects.Add(clickedElement.localPosition);
-                index = 1;
-            }
-            else if (radioOption == "SpawnPoint")
-            {
-                data.SpawnPoints.Add(clickedElement.localPosition);
-                index = 2;
-            }
 
+            int index = radioOption == "ContaminationArea" ? 0 : radioOption == "ThrowableObject" ? 1 : radioOption == "SpawnPoint" ? 2 : -1;
             data.FloorUsedId[id] = index;
 
             newPin = Instantiate(PinPoints[index]);
@@ -80,19 +61,6 @@ public class PinPointsManager : MonoBehaviour
     {
         if (data.FloorUsedId[id] != -1)
         {
-            string pinType = clickedElement.GetComponentInChildren<PinPointBehaviour>().PinType;
-            if (pinType == "SpawnPoint")
-            {
-                data.SpawnPoints.Remove(clickedElement.localPosition);
-            }
-            else if (pinType == "ContaminationArea")
-            {
-                data.ContaminationAreas.Remove(clickedElement.localPosition);
-            }
-            else if (pinType == "ThrowableObject")
-            {
-                data.ThrowableObjects.Remove(clickedElement.localPosition);
-            }
             data.FloorUsedId[id] = -1;
             Destroy(clickedElement.GetComponentInChildren<PinPointBehaviour>().gameObject);
         }
