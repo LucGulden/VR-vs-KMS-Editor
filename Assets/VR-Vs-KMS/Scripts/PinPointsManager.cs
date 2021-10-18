@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PinPointsManager : MonoBehaviour
 {
-    private List<Transform> FloorUsed;
+    private List<Transform> Floors;
+    private List<int> FloorUsedId;
+    public GameObject level;
     public GameObject jsonManager;
     private JsonManager jm;
     public List<GameObject> PinPoints;
@@ -12,8 +14,29 @@ public class PinPointsManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        FloorUsed = new List<Transform>();
+        Floors = new List<Transform>();
+        FloorUsedId = new List<int>();
+
         jm = jsonManager.GetComponent<JsonManager>();
+
+        int id = 0;
+        foreach (Transform child in level.GetComponent<Transform>())
+        {
+            if (child.GetComponent<FloorInteractionBehaviour>() != null)
+            {
+                Floors.Add(child);
+                FloorUsedId.Add(-1);
+                child.GetComponent<FloorInteractionBehaviour>().id = id;
+                id++;
+                foreach (Transform ch in child)
+                {
+                    Floors.Add(child);
+                    FloorUsedId.Add(-1);
+                    child.GetComponent<FloorInteractionBehaviour>().id = id;
+                    id++;
+                }
+            }
+        }
     }
 
     // Update is called once per frame
@@ -21,11 +44,11 @@ public class PinPointsManager : MonoBehaviour
     {
         
     }
-    public void addPinPoint(string radioOption, Transform clickedElement)
+    public void addPinPoint(string radioOption, Transform clickedElement, int id)
     {
-        if (!FloorUsed.Contains(clickedElement))
+        Debug.Log(id);
+        if (FloorUsedId[id] == -1)
         {
-            FloorUsed.Add(clickedElement);
             GameObject newPin;
             int index = 0;
             if (radioOption == "ContaminationArea")
@@ -44,15 +67,16 @@ public class PinPointsManager : MonoBehaviour
                 index = 2;
             }
 
+            FloorUsedId[id] = index;
 
             newPin = Instantiate(PinPoints[index]);
             newPin.GetComponent<PinPointBehaviour>().UpdatePosition(clickedElement);
         }
     }
 
-    public void rmPinPoint(string radioOption, Transform clickedElement)
+    public void rmPinPoint(string radioOption, Transform clickedElement, int id)
     {
-        if (FloorUsed.Contains(clickedElement))
+        if (FloorUsedId[id] != -1)
         {
             string pinType = clickedElement.GetComponentInChildren<PinPointBehaviour>().PinType;
             if (pinType == "SpawnPoint")
@@ -67,20 +91,20 @@ public class PinPointsManager : MonoBehaviour
             {
                 jm.ThrowableObjects.Remove(clickedElement.localPosition);
             }
-            FloorUsed.Remove(clickedElement);
+            FloorUsedId[id] = -1;
             Destroy(clickedElement.GetComponentInChildren<PinPointBehaviour>().gameObject);
         }
     }
 
-    public void updatePinPoint(string radioOption, Transform clickedElement)
+    public void updatePinPoint(string radioOption, Transform clickedElement, int id)
     {
         if (radioOption == "Remove")
         {
-            rmPinPoint(radioOption, clickedElement);
+            rmPinPoint(radioOption, clickedElement, id);
         }
         else
         {
-            addPinPoint(radioOption, clickedElement);
+            addPinPoint(radioOption, clickedElement, id);
         }
     }
 }
