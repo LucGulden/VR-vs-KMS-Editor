@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +11,7 @@ public class JsonManager : MonoBehaviour
     public PinPointsManager pm;
     public GameObject level;
     private Transform[] Children;
+    public InputField field;
 
 
     [SerializeField] 
@@ -22,8 +22,8 @@ public class JsonManager : MonoBehaviour
     {
         JsonData data = JsonData.GetInstance();
 
-        exportBtn.GetComponent<Button>().onClick.AddListener(saveFile);
-        importBtn.GetComponent<Button>().onClick.AddListener(loadFile);
+        exportBtn.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(saveFile);
+        importBtn.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(loadFile);
 
     }
 
@@ -35,8 +35,11 @@ public class JsonManager : MonoBehaviour
 
     public void saveFile()
     {
-        string path = EditorUtility.SaveFilePanel("Save config", "", "", "json");
-        if (path.Length != 0)
+        string path = Directory.GetCurrentDirectory() + "/";
+        path += field.text;
+        path += ".json";
+        Debug.Log(path);
+        if (path.Length > Directory.GetCurrentDirectory().Length)
         {
             string json = JsonUtility.ToJson(data);
             if (json != null)
@@ -46,8 +49,10 @@ public class JsonManager : MonoBehaviour
 
     public void loadFile()
     {
-        string path = EditorUtility.OpenFilePanel("Load config", "", "json");
-        if (path.Length != 0)
+        string path = Directory.GetCurrentDirectory();
+        path += field.text;
+        path += ".json";
+        if (path.Length > Directory.GetCurrentDirectory().Length)
         {
             pm.rmAllPinPoint();
             StreamReader r = new StreamReader(path);
