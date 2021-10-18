@@ -142,6 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &48713011 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574682146, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -162,6 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &49113155 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588502426682, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -182,6 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &50413085
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,6 +306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &64569933 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588652924826, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -323,6 +327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &73628438 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587648200377, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -343,6 +348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &81313885
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,6 +482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &107135265 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649586843203798, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -496,6 +503,78 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
+--- !u!1 &107862647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 107862648}
+  - component: {fileID: 107862650}
+  - component: {fileID: 107862649}
+  m_Layer: 5
+  m_Name: RawImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &107862648
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107862647}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.14999999, y: 0.14999999, z: 0.14999999}
+  m_Children: []
+  m_Father: {fileID: 1410608263}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 32.7, y: -0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &107862649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107862647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: eb89fe8765ff3d5459c024ac3cd08333, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &107862650
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107862647}
+  m_CullTransparentMesh: 0
 --- !u!1 &119317840 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574799792, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -516,6 +595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &128832613 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587489580289, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -536,6 +616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &138346467 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588884760980, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -556,6 +637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &159498309
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,6 +736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &166074202 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649586987866901, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -674,6 +757,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &193505161 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587294630270, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -694,6 +778,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &193734457 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588260544830, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -714,6 +799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &203621962 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588404169970, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -734,6 +820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &211719747 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587489597129, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -754,6 +841,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &219486912 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587648120169, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -774,6 +862,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &225423428 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588527890905, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -794,6 +883,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &234040179
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,6 +1031,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &249937918 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649586885044093, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -961,6 +1052,78 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
+--- !u!1 &250319960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 250319961}
+  - component: {fileID: 250319963}
+  - component: {fileID: 250319962}
+  m_Layer: 5
+  m_Name: RawImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &250319961
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250319960}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.14999999, y: 0.14999999, z: 0.14999999}
+  m_Children: []
+  m_Father: {fileID: 738283388}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 65, y: 0.6}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &250319962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250319960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: 1137747cc86866345b441da41efef6fa, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &250319963
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250319960}
+  m_CullTransparentMesh: 0
 --- !u!1 &283713881 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574695480, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -981,6 +1144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &296466546 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588404223792, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -1001,6 +1165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &316464695 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649586885050173, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -1021,6 +1186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &338246358 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587489558493, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -1041,6 +1207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &343223153
 GameObject:
   m_ObjectHideFlags: 0
@@ -1180,6 +1347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &392675473 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588652970448, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -1200,6 +1368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &400327776 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574705146, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -1220,6 +1389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &400584319
 GameObject:
   m_ObjectHideFlags: 0
@@ -1318,6 +1488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &429483399 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588296634460, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -1338,6 +1509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &431247209
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,6 +1641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &448859421 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587648008459, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -1489,6 +1662,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &486151984 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588502424698, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -1509,6 +1683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &501125555 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588829251307, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -1541,6 +1716,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &517831745 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587648069735, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -1561,6 +1737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &535878686 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587034708767, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -1581,6 +1758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &538021573 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587866174687, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -1601,6 +1779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &549414446 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588317316140, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -1621,6 +1800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &563691296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,6 +1899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &588439136
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,6 +1995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &600056515 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588124921888, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -1834,6 +2016,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &603223285 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587648080249, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -1854,6 +2037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &610857345 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587489541893, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -1874,6 +2058,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &623908571
 GameObject:
   m_ObjectHideFlags: 0
@@ -2034,6 +2219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!21 &663860988
 Material:
   serializedVersion: 6
@@ -2082,6 +2268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &687814473 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588467601125, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -2102,6 +2289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &689272703 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587648178281, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -2122,6 +2310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &718750892 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587006256288, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -2142,6 +2331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &719690625 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587006254304, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -2162,6 +2352,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &738283387
 GameObject:
   m_ObjectHideFlags: 0
@@ -2192,6 +2383,7 @@ RectTransform:
   m_Children:
   - {fileID: 1915610474}
   - {fileID: 1284509672}
+  - {fileID: 250319961}
   m_Father: {fileID: 1991934337}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2345,6 +2537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &758040844 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588401645129, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -2365,6 +2558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &759538445
 GameObject:
   m_ObjectHideFlags: 0
@@ -2459,6 +2653,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &775741076 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574701618, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -2479,6 +2674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &776598758
 GameObject:
   m_ObjectHideFlags: 0
@@ -2577,6 +2773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &831597749 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587489538861, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -2597,6 +2794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!43 &831942370
 Mesh:
   m_ObjectHideFlags: 0
@@ -2780,6 +2978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &852473804 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588282566107, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -2800,6 +2999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &852757437 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588404208958, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -2820,6 +3020,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &855782982 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574717460, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -2840,6 +3041,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &856220310 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588602907677, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -2860,6 +3062,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &863187808 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588404192742, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -2880,6 +3083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &863677059 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587866267331, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -2900,6 +3104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &873479007 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574793008, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -2920,6 +3125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &878233590 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588404107058, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -2940,6 +3146,78 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
+--- !u!1 &909852382
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 909852383}
+  - component: {fileID: 909852385}
+  - component: {fileID: 909852384}
+  m_Layer: 5
+  m_Name: RawImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &909852383
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909852382}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_Children: []
+  m_Father: {fileID: 2041602644}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 78, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &909852384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909852382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: e4f9bb085e046a34494c2c95851e998c, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &909852385
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909852382}
+  m_CullTransparentMesh: 0
 --- !u!1 &918552998 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587489537289, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -2960,6 +3238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &949757032
 GameObject:
   m_ObjectHideFlags: 0
@@ -3055,6 +3334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &963565876 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588260551038, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3075,6 +3355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &992075592
 GameObject:
   m_ObjectHideFlags: 0
@@ -3169,6 +3450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1002376774 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574711374, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3189,6 +3471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1008226668 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574716658, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3209,6 +3492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1015984160 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588317322348, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3229,6 +3513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1016430477 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587648102473, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3249,6 +3534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1026465726 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587866282957, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3269,6 +3555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1029528571 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587929473297, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3289,6 +3576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1093743294 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588109581935, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3309,6 +3597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1094222029 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587866258281, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3329,6 +3618,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1112326672 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587489551627, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3349,6 +3639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1125777591 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587866302481, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3369,6 +3660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1136030529 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574779958, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3389,6 +3681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1143383833 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587866281165, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3409,6 +3702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1167254010 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574670164, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3429,6 +3723,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1172804013 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588404120974, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3449,6 +3744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1222319778 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588195104052, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3469,6 +3765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1229200899 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587379606064, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3489,6 +3786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1229440432
 GameObject:
   m_ObjectHideFlags: 0
@@ -3558,6 +3856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1243964390 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588719609617, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3578,6 +3877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1267689622 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574791000, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3598,6 +3898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1271015674 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587650508667, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3618,6 +3919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1281158623 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574686712, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3638,6 +3940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1284509671
 GameObject:
   m_ObjectHideFlags: 0
@@ -3736,6 +4039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1300698436 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574684822, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3756,6 +4060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1328994781 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587379604080, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3776,6 +4081,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1333670259 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587929479505, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3796,6 +4102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1335417732 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588404205156, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3816,6 +4123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1366132814 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587497485081, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3836,6 +4144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1373309295 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574674770, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3856,6 +4165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1376716010 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574684754, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3876,6 +4186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1381174150 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588527896985, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3896,6 +4207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1391754808 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587648199853, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -3916,6 +4228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1410608262
 GameObject:
   m_ObjectHideFlags: 0
@@ -3946,6 +4259,7 @@ RectTransform:
   m_Children:
   - {fileID: 588439137}
   - {fileID: 776598759}
+  - {fileID: 107862648}
   m_Father: {fileID: 1991934337}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4021,6 +4335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1450309292
 GameObject:
   m_ObjectHideFlags: 0
@@ -4139,6 +4454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1455384630 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587866195719, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -4159,6 +4475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1456838637 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587648102957, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -4179,6 +4496,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1462731256 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587489515445, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -4199,6 +4517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1491936980 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587960633514, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -4219,6 +4538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1507790999
 GameObject:
   m_ObjectHideFlags: 0
@@ -4317,6 +4637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1522446033 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574684638, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -4337,6 +4658,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1531903621 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587505153272, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -4357,6 +4679,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1553004764 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587866256387, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -4377,6 +4700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1557285579 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588404196992, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -4397,6 +4721,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1557675853 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587294628158, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -4417,6 +4742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1001 &1561168674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6991,6 +7317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1584527403
 GameObject:
   m_ObjectHideFlags: 0
@@ -7103,6 +7430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1609120812 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574718834, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7123,6 +7451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1642496411
 GameObject:
   m_ObjectHideFlags: 0
@@ -7209,6 +7538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1647670094 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588404209942, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7229,6 +7559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1659381307 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587366242290, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7249,6 +7580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1662079832 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588404122374, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7269,6 +7601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1683114460 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588109575727, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7289,6 +7622,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1698178484 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587754731406, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7309,6 +7643,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1698771074 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574677402, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7329,6 +7664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1706505180 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587489516329, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7349,6 +7685,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1707202541 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588404186938, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7369,6 +7706,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1715384089 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587866177479, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7389,6 +7727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1717219481 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588602909789, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7409,6 +7748,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1718206195
 GameObject:
   m_ObjectHideFlags: 0
@@ -7503,6 +7843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1750284084
 GameObject:
   m_ObjectHideFlags: 0
@@ -7597,6 +7938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1774936318 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587648177261, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7617,6 +7959,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1775897281 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587489564383, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7637,6 +7980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1776602811 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587489569887, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7657,6 +8001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1798237243 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588404195530, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7677,6 +8022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1801178222 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587648123457, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7697,6 +8043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1812531086
 GameObject:
   m_ObjectHideFlags: 0
@@ -7804,7 +8151,7 @@ MonoBehaviour:
   ContaminationAreas: []
   ThrowableObjects: []
   SpawnPoints: []
-  Level: {fileID: 501125555}
+  FloorUsedId: 
   exportBtn: {fileID: 343223153}
   importBtn: {fileID: 2024181466}
 --- !u!4 &1814426253
@@ -7841,6 +8188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1834333473 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587648091067, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7861,6 +8209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1849376824 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574687774, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7881,6 +8230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1854212100 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587648130985, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7901,6 +8251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1858368168 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588296632348, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7921,6 +8272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1862037105 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587534171971, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7941,6 +8293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1866518758 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574706578, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -7961,6 +8314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1876898720
 GameObject:
   m_ObjectHideFlags: 0
@@ -8059,6 +8413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1891574259 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587960627434, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -8079,6 +8434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1903378703 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574687998, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -8099,6 +8455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1904624911 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587866249607, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -8119,6 +8476,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1915610473
 GameObject:
   m_ObjectHideFlags: 0
@@ -8214,6 +8572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1970703835 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587866272467, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -8234,6 +8593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1982885900 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588198009351, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -8254,6 +8614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1985204186
 GameObject:
   m_ObjectHideFlags: 0
@@ -8425,6 +8786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &1998721676 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649586843197590, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -8445,6 +8807,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &2004142631 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587648127171, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -8465,6 +8828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &2014240316 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588391205693, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -8485,6 +8849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &2021296841
 GameObject:
   m_ObjectHideFlags: 0
@@ -8708,6 +9073,7 @@ RectTransform:
   m_Children:
   - {fileID: 949757033}
   - {fileID: 2114505424}
+  - {fileID: 909852383}
   m_Father: {fileID: 1991934337}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8783,6 +9149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &2058652231 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587034702687, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -8803,6 +9170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &2062960002 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587648073575, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -8823,6 +9191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &2066994402 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649588198188109, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -8843,6 +9212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &2097619174 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587366248370, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -8863,6 +9233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &2104580114 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587011679596, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -8883,6 +9254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &2114505423
 GameObject:
   m_ObjectHideFlags: 0
@@ -8981,6 +9353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &2116547381 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587574721682, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -9001,6 +9374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &2121823587 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587534173955, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -9021,6 +9395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0
 --- !u!1 &2146302023 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4231649587866174403, guid: 5a54bb109a0c67f4284b452f2304ff6f,
@@ -9041,3 +9416,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radioButtons: {fileID: 1991934339}
   pm: {fileID: 1229440433}
+  id: 0

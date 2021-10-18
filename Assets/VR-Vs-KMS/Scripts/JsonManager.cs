@@ -7,19 +7,16 @@ using UnityEngine.UI;
 
 public class JsonManager : MonoBehaviour
 {
-    public List<Vector3> ContaminationAreas;
-    public List<Vector3> ThrowableObjects;
-    public List<Vector3> SpawnPoints;
-    public GameObject Level;
     public GameObject exportBtn;
     public GameObject importBtn;
+    
+    [SerializeField] 
+    private JsonData data = JsonData.GetInstance();
 
     // Start is called before the first frame update
     void Start()
     {
-        ContaminationAreas = new List<Vector3>();
-        ThrowableObjects = new List<Vector3>();
-        SpawnPoints = new List<Vector3>();
+        JsonData data = JsonData.GetInstance();
 
         exportBtn.GetComponent<Button>().onClick.AddListener(saveFile);
         importBtn.GetComponent<Button>().onClick.AddListener(loadFile);
@@ -34,10 +31,10 @@ public class JsonManager : MonoBehaviour
 
     public void saveFile()
     {
-        string path = EditorUtility.SaveFilePanel("Save config", "", "", ".json");
+        string path = EditorUtility.SaveFilePanel("Save config", "", "", "json");
         if (path.Length != 0)
         {
-            string json = JsonUtility.ToJson(this);
+            string json = JsonUtility.ToJson(data);
             if (json != null)
                 File.WriteAllText(path, json);
         }
@@ -47,5 +44,27 @@ public class JsonManager : MonoBehaviour
     public void loadFile()
     {
         Debug.Log("Clemeeeeeeeeeeeent");
+    }
+}
+
+[System.Serializable]
+public class JsonData
+{
+    public List<Vector3> ContaminationAreas = new List<Vector3>();
+    public List<Vector3> ThrowableObjects = new List<Vector3>();
+    public List<Vector3> SpawnPoints = new List<Vector3>();
+    public List<int> FloorUsedId = new List<int>();
+
+    private JsonData() { }
+
+    private static JsonData _instance;
+
+    public static JsonData GetInstance()
+    {
+        if (_instance == null)
+        {
+            _instance = new JsonData();
+        }
+        return _instance;
     }
 }
