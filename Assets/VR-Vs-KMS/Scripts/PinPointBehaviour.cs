@@ -6,8 +6,6 @@ using UnityEngine.UI;
 public class PinPointBehaviour : MonoBehaviour
 {
     private Transform CameraTransform;
-    private JsonManager jsonManager;
-    private RadioButtonSystem radioButtons;
     public string PinType;
 
 
@@ -15,8 +13,6 @@ public class PinPointBehaviour : MonoBehaviour
     void Start()
     {
         CameraTransform = GameObject.Find("ARCamera").transform;
-        jsonManager = GameObject.Find("JsonManager").GetComponent<JsonManager>();
-        radioButtons = GameObject.Find("PinPoints").GetComponent<RadioButtonSystem>();
     }
 
     // Update is called once per frame
