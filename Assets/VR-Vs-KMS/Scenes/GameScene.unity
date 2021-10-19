@@ -8248,7 +8248,7 @@ MonoBehaviour:
   pm: {fileID: 1229440433}
   level: {fileID: 501125555}
   field: {fileID: 237511044}
-  pathTxt: {fileID: 0}
+  pathTxt: {fileID: 951825959}
   data:
     FloorUsedId: 
 --- !u!4 &1814426253
