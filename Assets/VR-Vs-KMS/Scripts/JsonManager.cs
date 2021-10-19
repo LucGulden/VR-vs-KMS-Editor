@@ -45,7 +45,7 @@ public class JsonManager : MonoBehaviour
         path += field.text;
         path += ".json";
         Debug.Log(path);
-        if (path.Length > Directory.GetCurrentDirectory().Length)
+        if (path.Length > Application.persistentDataPath.Length + 1)
         {
             string json = JsonUtility.ToJson(data);
             if (json != null)
@@ -61,7 +61,7 @@ public class JsonManager : MonoBehaviour
         string path = Application.persistentDataPath + "/";
         path += field.text;
         path += ".json";
-        if (path.Length > Directory.GetCurrentDirectory().Length)
+        if (path.Length > Application.persistentDataPath.Length + 1)
         {
             pm.rmAllPinPoint();
             StreamReader r = new StreamReader(path);
