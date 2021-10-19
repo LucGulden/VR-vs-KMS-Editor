@@ -49,7 +49,7 @@ public class JsonManager : MonoBehaviour
 
     public void loadFile()
     {
-        string path = Directory.GetCurrentDirectory();
+        string path = Directory.GetCurrentDirectory() + "/";
         path += field.text;
         path += ".json";
         if (path.Length > Directory.GetCurrentDirectory().Length)
