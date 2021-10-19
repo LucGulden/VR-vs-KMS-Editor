@@ -12,6 +12,7 @@ public class JsonManager : MonoBehaviour
     public GameObject level;
     private Transform[] Children;
     public InputField field;
+    public GameObject pathTxt;
 
 
     [SerializeField] 
@@ -32,10 +33,15 @@ public class JsonManager : MonoBehaviour
     {
         
     }
+    IEnumerator DisableText()
+    {
+        yield return new WaitForSeconds(3);
+        pathTxt.SetActive(false);
+    }
 
     public void saveFile()
     {
-        string path = Directory.GetCurrentDirectory() + "/";
+        string path = Application.persistentDataPath + "/";
         path += field.text;
         path += ".json";
         Debug.Log(path);
@@ -44,12 +50,15 @@ public class JsonManager : MonoBehaviour
             string json = JsonUtility.ToJson(data);
             if (json != null)
                 File.WriteAllText(path, json);
+            pathTxt.GetComponent<Text>().text = path;
+            pathTxt.SetActive(true);
+            StartCoroutine(DisableText());
         }
     }
 
     public void loadFile()
     {
-        string path = Directory.GetCurrentDirectory() + "/";
+        string path = Application.persistentDataPath + "/";
         path += field.text;
         path += ".json";
         if (path.Length > Directory.GetCurrentDirectory().Length)
